@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rock+Salt&display=swap');
+:root {
+    --primary-color: #002667;
+    --secondary-color: #673D30;
+    --accent-color: #AED1F4;
+    --additional-accent-color: #00CDA0;
+
+    --heading-font: 'Rock Salt', serif;
+    --paragraph-font: Lato, serif;
+
+    --navigation-background-color: #002667;
+    --navigation-link-color: #673D30;
+    --navigation-hover-link-color: #AED1F4;
+    --navigation-hover-background-color: #00CDA0;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: var(--heading-font);
+   color: var(--primary-color) 
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent-color);
+}
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--navigation-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--navigation-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--navigation-link-color);
+}
+
+nav a:hover {
+    color: var(--navigation-hover-link-color);
+    background-color: var(--navigation-hover-background-color);
+}
