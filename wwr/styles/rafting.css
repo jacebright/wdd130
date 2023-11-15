@@ -8,7 +8,7 @@
     --heading-font: 'Rock Salt', serif;
     --paragraph-font: Lato, serif;
 
-    --navigation-background-color: #002667;
+    --navigation-background-color: #AED1F4;
     --navigation-link-color: #673D30;
     --navigation-hover-link-color: #AED1F4;
     --navigation-hover-background-color: #00CDA0;
@@ -16,6 +16,7 @@
 
 body {
     max-width: 960px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,12 +28,37 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: var(--paragraph-font);
     padding: 25px;
-    color: black
+    color: var(--additional-accent-color)
+}
+header {
+    margin: 1rem auto;
+    display:grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    border: 3px solid black;
 }
 
-/* nav {
-    position: absolute; */
-/* } */
+header img {
+    margin: 10px;
+    width: 120px;
+    height: auto;
+    border: 1px solid white;
+}
+
+nav {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+header nav a {
+    display: block;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid black;
+    color: var(--navigation-link-color);
+    background-color: var(--accent-color);
+}
 
 .hero {
     position: relative
@@ -62,4 +88,71 @@ article p {
     float: right;
     width: 275px;
     height: auto;
+}
+
+
+.history {
+    display: grid;
+    column-width: auto;
+    justify-items: center;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: #002667;
+}
+
+.history h2 {
+    grid-column: 1/4;
+}
+
+.history img {
+    width: 150px;
+    height: auto;
+    grid-column: 2/3;
+    border: 1px solid white;
+}
+
+.history .first {
+    grid-column: 1/2;
+}
+
+.history .second {
+    grid-column: 3/4;
+}
+
+figure img {
+    width: 100px;
+    height: auto;
+}
+
+.adventure {
+    display: grid;
+    column-width: auto;
+    justify-items: center;
+    border: 3px solid black;
+}
+
+.adventure h2 {
+    grid-column: 1/6;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+footer p {
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+footer .sociallinks {
+    grid-column: 3/4;
+    align-self: center;
+    justify-self: end;
+
+}
+
+.sociallinks img{
+    width: 50px;
 }
