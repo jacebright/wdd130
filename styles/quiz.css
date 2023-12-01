@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rock+Salt&display=swap');
+
+:root {
+    --heading-font: arial, serif;
+    --paragraph-font: Lato, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 960px;
+}
+
+body {
+    font-family: var(--heading-font);
+    font-size: 1.2em;
+    color: #673D30;
+    background: aliceblue;
+}
+
+header {
+    color: #002667;
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5em;
+}
+
+form{
+    width: auto;
+    margin: 0 auto;
+    padding: 5px;
+    border: solid black 3px;
+    border-radius: 0.5rem;
+    background-color: #AED1F4;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+    font-weight: bolder;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+button {
+    margin: 1rem;
+    background-color: #002667;
+    color: #AED1F4;
+    font-weight: bold;
+    padding: 1rem;
+    width: 7rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+main {
+    font-family: var(--paragraph-font);
+    font-style: italic;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: black;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
