@@ -58,6 +58,7 @@ header nav a {
     border: 1px solid var(--secondary-color);
     color: var(--navigation-link-color);
     background-color: var(--accent-color);
+    text-decoration: none;
 }
 
 .hero {
