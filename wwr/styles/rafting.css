@@ -83,6 +83,12 @@ header nav a {
     color: var(--primary-color);
 }
 
+.call h2 {
+    color: var(--navigation-link-color);
+    text-align: center;
+}
+
+
 article {
     background-color: rgba(0, 205, 160, .7);
     top: 100px;
@@ -100,8 +106,12 @@ article {
     display: grid;
 }
 
-.contact article p {
-    
+.call article {
+    text-align: center;
+}
+
+.call button {
+    float: right;
 }
 
 article p {
@@ -162,7 +172,16 @@ iframe {
     height: auto;
 }
 
-.adventure, .employees {
+.overview figure img {
+    height: 175px;
+    width: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.adventure, .employees, .overview {
     display: grid;
     column-width: auto;
     justify-items: center;
@@ -244,4 +263,12 @@ button {
 
 button:hover {
     background-color: darkgreen;
+}
+
+table, th, td {
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid var(--additional-accent-color);
+    background-color: #002667;
+    color: var(--accent-color);
 }
