@@ -62,17 +62,21 @@ header nav a {
     text-decoration: none;
 }
 
-.hero, .contact {
+.hero, .banner, .contact {
     position: relative
 }
 
-.hero img {
+.hero, .banner img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero h1 {
+.banner img{
+    margin-bottom: 10px;
+}
+
+.hero, .banner h1 {
     position: absolute;
     top: 0px;
     left: 125px
@@ -110,9 +114,22 @@ article {
     text-align: center;
 }
 
-.call button {
-    float: right;
+.contact-button, .trips-button {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -2px, rgba(0, 0, 0, 0.14) 0px 1px 4px 2px, rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+    position: fixed !important;
+    bottom: 24px !important;
+    right: 24px !important;
+    color: var(--accent-color) !important;
+    padding: 0.5rem;
+    background-color: #002667;
+    border: .5px var(--accent-color) solid;
 }
+
+/* .contact-button, .trips-button {
+    color: var(--accent-color) !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -2px, rgba(0, 0, 0, 0.14) 0px 1px 4px 2px, rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+} */
 
 article p {
     color: rgb(0 48 38);
@@ -177,16 +194,60 @@ iframe {
     width: auto;
 }
 
-figcaption {
-    text-align: center;
+.purpose figure img {
+    width: 300px;
+    height: auto;
 }
 
-.adventure, .employees, .overview {
+.overview{
+    max-width: fit-content;
+    float: right;
+    padding: 10px;
+}
+
+.newsletter {
+    float: right;
+    /* width: fit-content !important; */
+    max-width: 450px;
+}
+
+.table{
+    max-width: 450px;
+    /* float: right; */
+}
+figcaption {
+    text-align: center;
+    justify-self: center;
+}
+
+.adventure, .employees{
     display: grid;
     column-width: auto;
     justify-items: center;
     border: 3px solid var(--accent-color);
     background-color: #002667;
+}
+
+/* defining the overveiw section separately in order to allow the sections to float in the desired fashion */
+.overview{
+    justify-items: center;
+    border: 3px solid var(--accent-color);
+    background-color: #002667;
+}
+
+.purpose figcaption{
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    padding: 5px;
+}
+
+.purpose{
+    justify-items: center;
+    /* background-color: var(--primary-color); */
+    border: 3px solid var(--primary-color);
+    padding: 10px;
+    max-width: 450px;
+    margin: 15px;
 }
 
 .adventure, .employees, h2 {
@@ -199,6 +260,7 @@ figcaption {
 footer {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
+    border: 3px var(--secondary-color) solid;
 }
 
 footer p {
